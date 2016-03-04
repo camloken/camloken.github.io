@@ -1,0 +1,30 @@
+html, html * *:before, *:after{
+	box-sizing: border-box;
+}
+html, body {
+	line-height: 1.6;
+	letter-spacing: 0.05rem;
+	height: 100vh;
+}
+body {
+	font-family: 'Noto Sans', Arial, sans-serif;
+	background-color: #333;
+	transform-style: preserve-3d;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: lighter;
+}
+h1 { font-size: 2.4rem }
+h2 { font-size: 2.1rem }
+h3 { font-size: 1.9rem }
+h4 { font-size: 1.6rem }
+h5 { font-size: 1.3rem }
+h6 { font-size: 1rem }
+
+.content {
+	position: relative;
+	text-align: center;
+	top: 50%;
+	color: rgba(255,255,255,0.75);
+	transform: translate3d(0,-50%,0);
+}

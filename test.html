@@ -5,31 +5,31 @@
 	<meta charset="UTF-8">
 	<title>Test</title>
 	<style>
-		.video-btn {
-		    overflow: hidden;
-		    position: relative;
+		.inputfile {
+			width: 0.1px;
+			height: 0.1px;
+			opacity: 0;
+			overflow: hidden;
+			position: absolute;
+			z-index: -1;
+		}
+		.inputfile + label {
+		    font-size: 1.25em;
+		    font-weight: 700;
+		    color: white;
+		    background-color: black;
+		    display: inline-block;
 		}
 
-		.video-btn [type=file] {
-		    cursor: inherit;
-		    display: block;
-		    font-size: 999px;
-		    filter: alpha(opacity=0);
-		    min-height: 100%;
-		    min-width: 100%;
-		    opacity: 0;
-		    position: absolute;
-		    right: 0;
-		    text-align: right;
-		    top: 0;
+		.inputfile:focus + label,
+		.inputfile + label:hover {
+		    background-color: red;
 		}
 	</style>
 </head>
 <body>
-	<label class="video-btn" for="videoBtn">
-	  Capture
-	  <input id="videoBtn" type="file" name="video" accept="video/*" capture="user">
-	</label>
-	
+	<input type="file" name="file" id="file" class="inputfile" />
+	<label for="file">Choose a file</label>
+
 </body>
 </html>

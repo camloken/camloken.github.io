@@ -29,9 +29,13 @@
 		}
 	</style>
 </head>
-<body>
-	<input type="file" name="file" id="file" class="inputfile" accept="video/*" capture="user" />
-	<label for="file">Choose a file</label>
-
-</body>
+	<body>
+		<input type="file" name="file" id="file" class="inputfile" accept="video/*" capture="user" />
+		<label for="file">Choose a file</label>
+	</body>
+	<script>
+		cont getId = (id) => document.getElementById(id);
+		let filename = getId(file).value;
+		console.log(filemname);
+	</script>
 </html>
